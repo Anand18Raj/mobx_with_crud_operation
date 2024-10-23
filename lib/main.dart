@@ -55,7 +55,9 @@ groupTypeStore.updateGroupType(data,id);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor: Colors.white,
         appBar: AppBar(title: const Text('MobX with CRUD operation')),
         body: Observer(
           builder: (_) {
